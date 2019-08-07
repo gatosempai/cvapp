@@ -3,6 +3,7 @@ package dev.oscar.ruiz.cvapp.fetchcv.data.model.response
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import dev.oscar.ruiz.cvapp.utils.Status
 
 @JsonClass(generateAdapter = true)
 data class CvFetchResponse(
@@ -13,5 +14,7 @@ data class CvFetchResponse(
     @Json(name = "personalInformation")
     val personalInformation: PersonalInformation = PersonalInformation(),
     @Json(name = "professionalInformation")
-    val professionalInformation: ProfessionalInformation = ProfessionalInformation()
+    val professionalInformation: ProfessionalInformation = ProfessionalInformation(),
+    val apiError: ApiError = ApiError(),
+    var status: Status = Status.ERROR
 )

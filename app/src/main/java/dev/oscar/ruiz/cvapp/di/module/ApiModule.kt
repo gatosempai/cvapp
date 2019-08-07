@@ -4,14 +4,13 @@ import dagger.Module
 import dagger.Provides
 import dev.oscar.ruiz.cvapp.BuildConfig
 import dev.oscar.ruiz.cvapp.api.CVFetch
+import dev.oscar.ruiz.cvapp.di.scope.AppScope
 import io.reactivex.schedulers.Schedulers
-import okhttp3.Authenticator
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
-import javax.inject.Singleton
 
 /**
  * Module to be used by Dagger to provide SvodFacade instances
@@ -26,8 +25,8 @@ class ApiModule {
      * @return The Post Service implementation
      */
     @Provides
-    @Singleton
-    fun provideSvodApi(authenticator: Authenticator): CVFetch {
+    @AppScope
+    fun provideApi(): CVFetch {
         val logging = HttpLoggingInterceptor()
         when (BuildConfig.DEBUG) {
             true -> {
@@ -39,7 +38,6 @@ class ApiModule {
         }
         val client = OkHttpClient.Builder()
             .addInterceptor(logging)
-            .authenticator(authenticator)
             .build()
 
         return Retrofit.Builder()

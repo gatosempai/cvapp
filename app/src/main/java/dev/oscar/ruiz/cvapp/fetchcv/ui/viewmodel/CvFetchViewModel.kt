@@ -4,7 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import dev.oscar.ruiz.cvapp.fetchcv.data.FetchRepository
+import dev.oscar.ruiz.cvapp.fetchcv.data.model.response.ApiError
 import dev.oscar.ruiz.cvapp.fetchcv.data.model.response.CvFetchResponse
+import dev.oscar.ruiz.cvapp.utils.Status
 import io.reactivex.disposables.Disposable
 import io.reactivex.observers.DisposableSingleObserver
 import javax.inject.Inject
@@ -15,7 +17,7 @@ class CvFetchViewModel
 ) : ViewModel() {
 
     private val fetchResult = MutableLiveData<CvFetchResponse>()
-    val frychCv: LiveData<CvFetchResponse> get() = fetchResult
+    val fetchCv: LiveData<CvFetchResponse> get() = fetchResult
     private lateinit var fetchDisposable: Disposable
 
     fun fetchCv() {
@@ -30,7 +32,10 @@ class CvFetchViewModel
 
                     override fun onError(e: Throwable?) {
                         fetchResult.postValue(
-                            CvFetchResponse()
+                            CvFetchResponse(
+                                status = Status.ERROR,
+                                apiError = ApiError(e?.message)
+                            )
                         )
                     }
                 }
