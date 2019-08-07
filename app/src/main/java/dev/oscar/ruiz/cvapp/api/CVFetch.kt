@@ -10,6 +10,6 @@ interface CVFetch {
     /**
      * Fetch json file hosted on gist
      */
-    @GET(BuildConfig.API_ENDPOINT + "/oscar-ruiz-globant/e453b4cd26c759c90a92f38bd1d8161f/raw/5157ce94e6cbf0b252022d877ab36950c555ba9e/cv-list.json")
+    @GET(BuildConfig.API_ENDPOINT + "/oscar-ruiz-globant/e453b4cd26c759c90a92f38bd1d8161f/raw/50134e7e254eb711ddb6fe26c7a4ed2919c8530d/cv-list.json")
     fun fetchCv(): Single<CvFetchResponse>
 }
