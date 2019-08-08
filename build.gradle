@@ -47,8 +47,9 @@ ext {
     moshi_version = '1.8.0'
     lifecycle_version = '2.0.0'
     multidex_version = '1.0.3'
-    mock_web_server_version = '3.13.1'
+    mock_web_server_version = '4.0.1'
     mockito_inline_version = '2.13.0'
     mockito_kotlin_version = '2.0.0'
     core_testing_version = '2.0.0'
+    extJUnitVersion = "1.1.2-alpha02"
 }
