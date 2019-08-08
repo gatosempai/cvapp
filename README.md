@@ -10,10 +10,9 @@ https://gist.githubusercontent.com/oscar-ruiz-globant/e453b4cd26c759c90a92f38bd1
 
 Project details:
 
-Kotlin
-
+- Kotlin
 - MVVM architecture
 - Android Architecture Components(ViewModel, LifeCyle)
-Libs used Dagger-Android, RxJava2, Retrofit2, Glide
-Testing tools, Junit, Mockito and Espresso
-Security, basic proguard rule and dummy keystore for release APK
+- Libs used Dagger-Android, RxJava2, Retrofit2, Glide
+- Testing tools, Junit, Mockito and Espresso
+- Security, basic proguard rule and dummy keystore for release APK
