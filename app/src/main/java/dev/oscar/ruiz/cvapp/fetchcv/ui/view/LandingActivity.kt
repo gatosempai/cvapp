@@ -1,7 +1,8 @@
 package dev.oscar.ruiz.cvapp.fetchcv.ui.view
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
+import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -17,13 +18,18 @@ import dev.oscar.ruiz.cvapp.fetchcv.ui.viewmodel.CvFetchViewModel
 import dev.oscar.ruiz.cvapp.utils.Status
 import javax.inject.Inject
 
+
 class LandingActivity : DaggerAppCompatActivity(), ItemClickListener {
+
+    companion object {
+        const val EXTRA_CV_DATA = "cvData"
+    }
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    lateinit var activityLandingBinding: ActivityLandingBinding
-    lateinit var cvDataAdapter: CvDataAdapter
+    private lateinit var activityLandingBinding: ActivityLandingBinding
+    private lateinit var cvDataAdapter: CvDataAdapter
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,12 +44,15 @@ class LandingActivity : DaggerAppCompatActivity(), ItemClickListener {
     }
 
     private fun setUpViewModel() {
-        val viewModel = ViewModelProviders.of(this, viewModelFactory).get(CvFetchViewModel::class.java)
+        val viewModel = ViewModelProviders.of(this, viewModelFactory)
+            .get(CvFetchViewModel::class.java)
+        showLoader()
         viewModel.fetchCv()
         viewModel.fetchCv.observe(this, Observer {
+            hideLoader()
             when (it.status) {
                 Status.SUCCESS -> updateCvList(it.cvDataList)
-                Status.ERROR -> println()
+                Status.ERROR -> updateWrongView()
             }
         })
     }
@@ -59,9 +68,24 @@ class LandingActivity : DaggerAppCompatActivity(), ItemClickListener {
     private fun updateCvList(cvDataList: List<CvData>) {
         cvDataAdapter.itemList = cvDataList
         cvDataAdapter.notifyDataSetChanged()
+        activityLandingBinding.tvLandingSomethingWrong.visibility = View.GONE
+    }
+
+    private fun updateWrongView() {
+        activityLandingBinding.tvLandingSomethingWrong.visibility = View.VISIBLE
     }
 
     private fun launchDetailActivity(item: CvData) {
-        Toast.makeText(this, "item clicked " + item.personalInformation.name, Toast.LENGTH_LONG).show()
+        val launchingIntent = Intent(this, DetailActivity::class.java)
+        launchingIntent.putExtra(EXTRA_CV_DATA, item)
+        startActivity(launchingIntent)
+    }
+
+    private fun showLoader() {
+        activityLandingBinding.pbLoader.visibility = View.VISIBLE
+    }
+
+    private fun hideLoader() {
+        activityLandingBinding.pbLoader.visibility = View.GONE
     }
 }

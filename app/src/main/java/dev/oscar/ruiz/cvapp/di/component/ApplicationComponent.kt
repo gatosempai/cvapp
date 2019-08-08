@@ -7,16 +7,18 @@ import dagger.android.support.AndroidSupportInjectionModule
 import dev.oscar.ruiz.cvapp.CvApplication
 import dev.oscar.ruiz.cvapp.di.module.ActivityBindingModule
 import dev.oscar.ruiz.cvapp.di.module.ApiModule
-import dev.oscar.ruiz.cvapp.di.module.DbModule
 import dev.oscar.ruiz.cvapp.di.module.ViewModelModule
 import dev.oscar.ruiz.cvapp.di.scope.AppScope
+
+/**
+ * ApplicationComponent to be used by Dagger for graph
+ */
 
 @AppScope
 @Component(
     modules = [
         AndroidSupportInjectionModule::class,
         ApiModule::class,
-        DbModule::class,
         ActivityBindingModule::class,
         ViewModelModule::class]
 )

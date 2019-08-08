@@ -1,0 +1,373 @@
+{
+  "cvDataList": [
+    {
+      "personalInformation": {
+        "name": "Oscar",
+        "lastName": "Ruiz Palma",
+        "age": 20,
+        "country": "Mexico",
+        "phone": "123456789",
+        "email": "some@mail.com"
+      },
+      "education": [
+        {
+          "universityName": "University of Mexico",
+          "location": {
+            "city": "Mexico City",
+            "country": "Mexico"
+          },
+          "degree": "MSc",
+          "degreeName": "Master of Science",
+          "period": "2013-2015"
+        },
+        {
+          "universityName": "University of Mexico",
+          "location": {
+            "city": "Mexico City",
+            "country": "Mexico"
+          },
+          "degree": "BS",
+          "degreeName": "Compuer Engineering",
+          "period": "2007-2011"
+        }
+      ],
+      "professionalInformation": {
+        "title": "Software Engineer Sr",
+        "summary": "Dynamic and motivated professional with a proven record of generating and building relationships, managing projects from concept to completion, designing educational strategies, and coaching individuals to success. Skilled in building cross-functional teams, demonstrating exceptional communication skills, and making critical decisions during challenges. Adaptable and transformational leader with an ability to work independently, creating effective presentations, and developing opportunities that further establish organizational goals.",
+        "history": [
+          {
+            "companyName": "Globant",
+            "location": {
+              "city": "Mexico City",
+              "country": "Mexico"
+            },
+            "positionHeld": "Software Engineer Sr",
+            "period": "2015-actual"
+          }
+        ]
+      },
+      "control": {
+        "lastUpdate": "2019-06-25",
+        "isLookingJob": false
+      }
+    },
+    {
+      "personalInformation": {
+        "name": "Jon",
+        "lastName": "Snow",
+        "age": 16,
+        "country": "Westeros",
+        "phone": "123456789",
+        "email": "some@mail.com"
+      },
+      "education": [
+        {
+          "universityName": "University of Westeros",
+          "location": {
+            "city": "Winterfell",
+            "country": "Westeros"
+          },
+          "degree": "Lord Commander",
+          "degreeName": "Night Watch",
+          "period": "after Lord Mormoth"
+        }
+      ],
+      "professionalInformation": {
+        "title": "King in the North",
+        "summary": "Knows nothing...",
+        "history": [
+          {
+            "companyName": "Wildlings",
+            "location": {
+              "city": "HardHome",
+              "country": "Beyond the wall"
+            },
+            "positionHeld": "Lord Commander",
+            "period": "after Lord Mormoth"
+          },
+          {
+            "companyName": "Winterfell",
+            "location": {
+              "city": "Winterfell",
+              "country": "Westeros"
+            },
+            "positionHeld": "Bastard",
+            "period": "N/A"
+          }
+        ]
+      },
+      "control": {
+        "lastUpdate": "2014-06-25",
+        "isLookingJob": false
+      }
+    },
+    {
+      "personalInformation": {
+        "name": "Juan",
+        "lastName": "Sanchez",
+        "age": 35,
+        "country": "Colombia",
+        "phone": "123456789",
+        "email": "some@mail.com"
+      },
+      "education": [
+        {
+          "universityName": "University of Colombia",
+          "location": {
+            "city": "Bogota",
+            "country": "Colombia"
+          },
+          "degree": "BS",
+          "degreeName": "Computer Systems",
+          "period": "2000-2004"
+        }
+      ],
+      "professionalInformation": {
+        "title": "Software Engineer Sr",
+        "summary": "Human Resources Generalist with progressive experience managing employee benefits & compliance, employee hiring & onboarding, performance management processes, licensure tracking and HR records. Dependable and organized team player with the ability to communicate effectively and efficiently. Skilled at building relationships with employees across all levels of an organization. Proficient with HRIS, applicant tracking and benefits management.",
+        "history": [
+          {
+            "companyName": "America Inc.",
+            "location": {
+              "city": "Mexico City",
+              "country": "Mexico"
+            },
+            "positionHeld": "Software Engineer Sr",
+            "period": "2015-actual"
+          },
+          {
+            "companyName": "Tabaco",
+            "location": {
+              "city": "Bogota",
+              "country": "Colombia"
+            },
+            "positionHeld": "Software Engineer Jr",
+            "period": "2005-2007"
+          }
+        ]
+      },
+      "control": {
+        "lastUpdate": "2018-12-02",
+        "isLookingJob": true
+      }
+    },
+    {
+      "personalInformation": {
+        "name": "Vladimir",
+        "lastName": "Shukov",
+        "age": 25,
+        "country": "Russia",
+        "phone": "123456789",
+        "email": "some@mail.com"
+      },
+      "education": [
+        {
+          "universityName": "University of Moscow",
+          "location": {
+            "city": "Moscow",
+            "country": "Russia"
+          },
+          "degree": "BS",
+          "degreeName": "Digital Systems",
+          "period": "2012-2016"
+        }
+      ],
+      "professionalInformation": {
+        "title": "Software Engineer",
+        "summary": "With extensive experience in the commercial utilisation of multiple social media channels including Facebook, Twitter and YouTube; I build successful social strategies that increase brand awareness, promote customer engagement and ultimately drive web traffic and conversions. With a degree in psychology and strong business acumen, I bring a customer focused approach to online and social marketing.",
+        "history": [
+          {
+            "companyName": "Matroska",
+            "location": {
+              "city": "Saint Petersburg",
+              "country": "Russia"
+            },
+            "positionHeld": "Software Engineer",
+            "period": "2016-actual"
+          }
+        ]
+      },
+      "control": {
+        "lastUpdate": "2019-08-08",
+        "isLookingJob": true
+      }
+    },
+    {
+      "personalInformation": {
+        "name": "Kim",
+        "lastName": "Xin Oun",
+        "age": 33,
+        "country": "South Korea",
+        "phone": "123456789",
+        "email": "some@mail.com"
+      },
+      "education": [
+        {
+          "universityName": "University of Korea",
+          "location": {
+            "city": "Seul",
+            "country": "South Korea"
+          },
+          "degree": "MSc",
+          "degreeName": "Master of Science",
+          "period": "2017-2019"
+        },
+        {
+          "universityName": "University of Korea",
+          "location": {
+            "city": "Seul",
+            "country": "South Korea"
+          },
+          "degree": "BS",
+          "degreeName": "Informatic",
+          "period": "2013-2017"
+        }
+      ],
+      "professionalInformation": {
+        "title": "Software Engineer",
+        "summary": "Marketing Manager with over eight years of experience. Proven success in running email marketing campaigns and implementing marketing strategies that have pulled in a 20% increase in qualified leads. Proficient in content, social media and inbound marketing strategies. Skilled, creative and innovative.",
+        "history": []
+      },
+      "control": {
+        "lastUpdate": "2019-08-07",
+        "isLookingJob": true
+      }
+    },
+    {
+      "personalInformation": {
+        "name": "Bryan",
+        "lastName": "Smith",
+        "age": 40,
+        "country": "United States of America",
+        "phone": "123456789",
+        "email": "some@mail.com"
+      },
+      "education": [
+        {
+          "universityName": "Standford",
+          "location": {
+            "city": "San Jose",
+            "country": "United States of America"
+          },
+          "degree": "BS",
+          "degreeName": "Computer Engineering",
+          "period": "2000-2005"
+        }
+      ],
+      "professionalInformation": {
+        "title": "Software Architect",
+        "summary": "Experienced Project Manager with vast IT experience. Skills include computer networking, analytical thinking and creative problem solving. Able to apply customer service concepts to IT to improve user experience for clients, employees and administration.",
+        "history": [
+          {
+            "companyName": "Intel",
+            "location": {
+              "city": "San Jose",
+              "country": "United States of America"
+            },
+            "positionHeld": "Trainee",
+            "period": "2005-2006"
+          },
+          {
+            "companyName": "IBM",
+            "location": {
+              "city": "San Jose",
+              "country": "United States of America"
+            },
+            "positionHeld": "Software Engineer Jr",
+            "period": "2006-2007"
+          },
+          {
+            "companyName": "Microsoft",
+            "location": {
+              "city": "New York",
+              "country": "United States of America"
+            },
+            "positionHeld": "Software Engineer",
+            "period": "2007-2008"
+          },
+          {
+            "companyName": "Oracle",
+            "location": {
+              "city": "San Francisco",
+              "country": "United States of America"
+            },
+            "positionHeld": "Software Engineer Sr",
+            "period": "2008-2009"
+          },
+          {
+            "companyName": "Google",
+            "location": {
+              "city": "San Jose",
+              "country": "United States of America"
+            },
+            "positionHeld": "Software Engineer Sr",
+            "period": "2009-2017"
+          },
+          {
+            "companyName": "Facebook",
+            "location": {
+              "city": "San Jose",
+              "country": "United States of America"
+            },
+            "positionHeld": "Software Architect",
+            "period": "2007-actual"
+          }
+        ]
+      },
+      "control": {
+        "lastUpdate": "2019-06-25",
+        "isLookingJob": false
+      }
+    },
+    {
+      "personalInformation": {
+        "name": "Alfred",
+        "lastName": "Hilbert",
+        "age": 30,
+        "country": "London",
+        "phone": "123456789",
+        "email": "some@mail.com"
+      },
+      "education": [
+        {
+          "universityName": "Oxford",
+          "location": {
+            "city": "Oxford",
+            "country": "England"
+          },
+          "degree": "BS",
+          "degreeName": "Electrical Engineering",
+          "period": "2007-2011"
+        }
+      ],
+      "professionalInformation": {
+        "title": "Software engineer",
+        "summary": "15+ years of initiating and delivering sustained results and effective change for Fortune 500 firms across a wide range of industries including enterprise software, digital marketing, advertising technology, e-commerce and government. Major experience lies in strategizing and leading cross-functional teams to bring about fundamental change and improvement in strategy, process, and profitability – both as a leader and expert consultant.",
+        "history": [
+          {
+            "companyName": "Clock",
+            "location": {
+              "city": "London",
+              "country": "England"
+            },
+            "positionHeld": "Software Enginner Jr",
+            "period": "2012-2015"
+          },
+          {
+            "companyName": "Towers",
+            "location": {
+              "city": "Manchester",
+              "country": "England"
+            },
+            "positionHeld": "Software Enginer",
+            "period": "2015-actual"
+          }
+        ]
+      },
+      "control": {
+        "lastUpdate": "2014-06-25",
+        "isLookingJob": false
+      }
+    }
+  ]
+}

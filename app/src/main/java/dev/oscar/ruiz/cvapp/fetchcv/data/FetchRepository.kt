@@ -8,6 +8,10 @@ import io.reactivex.Single
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
+/**
+ * Fetch Repository
+ */
+
 @AppScope
 class FetchRepository
 @Inject constructor(
@@ -23,11 +27,5 @@ class FetchRepository
             .doOnSuccess {
                 it.status = Status.SUCCESS
             }
-        /*.onErrorReturn {
-            CvFetchResponse(
-                status = Status.ERROR,
-                apiError = ApiError(it.message)
-            )
-        }*/
     }
 }

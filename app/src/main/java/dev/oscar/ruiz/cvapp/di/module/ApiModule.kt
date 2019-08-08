@@ -13,17 +13,12 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 /**
- * Module to be used by Dagger to provide SvodFacade instances
+ * Module to be used by Dagger to provide CVFetch Service
  */
 
 @Module
 class ApiModule {
 
-    /**
-     * Provides the CVFetch implementation
-     * @param retrofit The retrofit object used to instantiate the service
-     * @return The Post Service implementation
-     */
     @Provides
     @AppScope
     fun provideApi(): CVFetch {

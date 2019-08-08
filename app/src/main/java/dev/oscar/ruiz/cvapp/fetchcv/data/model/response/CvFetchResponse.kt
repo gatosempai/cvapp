@@ -5,6 +5,11 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import dev.oscar.ruiz.cvapp.utils.Status
 
+
+/**
+ * Class for CvFetchResponse data model
+ */
+
 @JsonClass(generateAdapter = true)
 data class CvFetchResponse(
     @Json(name = "cvDataList")

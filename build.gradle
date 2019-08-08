@@ -33,7 +33,7 @@ task clean(type: Delete) {
 ext {
     // Sdk and tools
     // Support library and architecture components support minSdk 14 and above.
-    minSdkVersion = 14
+    minSdkVersion = 21
     targetSdkVersion = 28
     compileSdkVersion = 28
 
@@ -45,7 +45,10 @@ ext {
     rx2android_version = '2.1.0'
     okhttp_version = '4.0.1'
     moshi_version = '1.8.0'
-    room_version = '2.1.0'
     lifecycle_version = '2.0.0'
     multidex_version = '1.0.3'
+    mock_web_server_version = '3.13.1'
+    mockito_inline_version = '2.13.0'
+    mockito_kotlin_version = '2.0.0'
+    core_testing_version = '2.0.0'
 }

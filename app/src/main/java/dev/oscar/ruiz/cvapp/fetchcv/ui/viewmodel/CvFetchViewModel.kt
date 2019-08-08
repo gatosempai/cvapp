@@ -1,8 +1,10 @@
 package dev.oscar.ruiz.cvapp.fetchcv.ui.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import dev.oscar.ruiz.cvapp.BuildConfig
 import dev.oscar.ruiz.cvapp.fetchcv.data.FetchRepository
 import dev.oscar.ruiz.cvapp.fetchcv.data.model.response.ApiError
 import dev.oscar.ruiz.cvapp.fetchcv.data.model.response.CvFetchResponse
@@ -37,6 +39,10 @@ class CvFetchViewModel
                                 apiError = ApiError(e?.message)
                             )
                         )
+                        if (BuildConfig.DEBUG) {
+                            Log.d("Error", e?.message)
+                            e?.printStackTrace()
+                        }
                     }
                 }
             )

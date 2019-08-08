@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import dev.oscar.ruiz.cvapp.databinding.ItemCvDataBinding
 import dev.oscar.ruiz.cvapp.fetchcv.data.model.response.CvData
 import dev.oscar.ruiz.cvapp.fetchcv.ui.view.handlers.ItemClickListener
+import dev.oscar.ruiz.cvapp.utils.formatName
 
 class CvDataAdapter(
     private val clickListener: ItemClickListener,
@@ -28,10 +29,12 @@ class CvDataAdapter(
     inner class CvDataViewHolder(private val binding: ItemCvDataBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        private val imageUrl = "https://images.all-free-download.com/images/graphiclarge/harry_potter_icon_6825007.jpg"
+
         fun bindView(item: CvData) {
-            val name = item.personalInformation.name + item.personalInformation.lastName
-            binding.imageUrl = "https://images.all-free-download.com/images/graphiclarge/harry_potter_icon_6825007.jpg"
-            binding.tvLandingNameItem.text = name
+            binding.imageUrl = imageUrl
+            binding.tvLandingNameItem.text =
+                formatName(item.personalInformation.name, item.personalInformation.lastName)
             binding.tvLandingJobItem.text = item.professionalInformation.title
             binding.tvLandingLocationItem.text = item.personalInformation.country
             binding.cvRoot.setOnClickListener {
